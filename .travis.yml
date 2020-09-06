@@ -1,0 +1,25 @@
+language: node_js
+cache:
+  directories:
+    - node_modules
+    - ~/.npm
+node_js: 
+  - 12
+git:
+  depth: 3
+script:
+  - yarn test
+notifications:
+  email:
+    reciepmients:
+      - sandoval.luis2097@gmail.com
+    on_success: always
+    on_faild: always
+deploy:
+  provide: heroku
+  skip-cleanup: true
+  keep-history: true
+  api_key: 0fb9c707-7738-4722-ab36-4a72bc65a182
+  app: backendcdci
+  on:
+    repo: LuisSandovalCode/platzi-store-backend
