@@ -19,7 +19,7 @@ deploy:
   provide: heroku
   skip-cleanup: true
   keep-history: true
-  api_key: 0fb9c707-7738-4722-ab36-4a72bc65a182
+  api_key: e2e77969-e74e-4ecc-8ced-83f943dbb1a1
   app: backendcdci
   on:
     repo: LuisSandovalCode/platzi-store-backend
